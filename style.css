@@ -1,0 +1,22 @@
+style.css
+
+/* CSS rules for setting font size and making it responsive */
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
