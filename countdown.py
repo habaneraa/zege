@@ -24,21 +24,13 @@ colors = [
 ]
 
 
-def run_zege_countdown(secs: int) -> None:
+def run_zege_countdown(secs: int) -> str:
+    countdown_string = ''
     for i in range(secs + 1):
         countdown_sec = secs - i
         time.sleep(1.0)
-        print('\r' + 'z' * countdown_sec + 'zege' + ' ' * i, end='')
-    print('')
-
-    try:
-        while True:
-            for color in colors:
-                print(color, 'ZEGE! ' * 10)
-    except KeyboardInterrupt:
-        print(Fore.RESET, end='')
-        print('zzzzzzzzzzzzz zzzzzz zzzz zzz  zz   z    z...')
-        return None
+        countdown_string += 'z' * countdown_sec + 'zege' + ' ' * i
+    return countdown_string
 
 
 if __name__ == '__main__':
