@@ -24,7 +24,7 @@ colors = [
 ]
 
 
-def run_zege_countdown(secs: int) -> None:
+def zege_countdown(secs: int) -> None:
     for i in range(secs + 1):
         countdown_sec = secs - i
         time.sleep(1.0)
@@ -39,17 +39,3 @@ def run_zege_countdown(secs: int) -> None:
         print(Fore.RESET, end='')
         print('zzzzzzzzzzzzz zzzzzz zzzz zzz  zz   z    z...')
         return None
-
-
-if __name__ == '__main__':
-    import sys
-
-    if len(sys.argv) > 1:
-        seconds = sys.argv[1]
-    else:
-        seconds = ('Seconds > ')
-    
-    try:
-        run_zege_countdown(int(seconds))
-    except ValueError as e:
-        print('Requires a positive integer.')
