@@ -47,7 +47,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         seconds = sys.argv[1]
     else:
-        seconds = ('Seconds > ')
+        seconds = input('Seconds > ')
     
     try:
         run_zege_countdown(int(seconds))
