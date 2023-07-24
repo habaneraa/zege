@@ -1,13 +1,16 @@
+UPDATED
 <!DOCTYPE html>
 <html>
 <head>
     <title>Zege Countdown</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
-    <div id="countdown"></div>
+    <div id="countdown-container" class="countdown"></div>
     <script>
-        var countdown = document.getElementById("countdown");
+        var countdown = document.getElementById("countdown-container");
         var seconds = 10; // Set the countdown duration here
+
         var countdownInterval = setInterval(function() {
             countdown.textContent = 'z'.repeat(seconds) + 'zege' + ' '.repeat(10 - seconds);
             seconds--;
