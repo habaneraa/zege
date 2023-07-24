@@ -1,20 +1,21 @@
+UPDATED
 /* static/style.css */
 
 /* Add styles to center the contents */
-#countdown {
+#countdown-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Set the font size to be as large as possible */
-#countdown {
+#countdown-container {
   font-size: 5vw;
 }
 
 /* Make the styles responsive to screen width */
 @media screen and (max-width: 600px) {
-  #countdown {
+  #countdown-container {
     font-size: 3vw;
   }
 }
